@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HNAAltimeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3U-Eq-9hL">
+                                <rect key="frame" x="27" y="52" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TfM-40-To5"/>
+                                </constraints>
+                                <state key="normal" title="Button2">
+                                    <color key="titleColor" red="0.07488643733" green="1" blue="0.27680498209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="altimeterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfK-hu-CZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuJ-rf-P2g">
+                                <rect key="frame" x="27" y="106" width="320" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mnt-oY-17o"/>
+                                </constraints>
+                                <state key="normal" title="Button3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="airPressureAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sF-DO-dul"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-0I-AAu">
+                                <rect key="frame" x="27" y="168" width="320" height="80"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4WT-gO-zZ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zjs-1P-Stx">
+                                <rect key="frame" x="27" y="266" width="320" height="80"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6tn-eK-X3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B3U-Eq-9hL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="A8l-Nc-hEc"/>
+                            <constraint firstItem="2CP-0I-AAu" firstAttribute="top" secondItem="BuJ-rf-P2g" secondAttribute="bottom" constant="32" id="Ijd-cM-gM2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3U-Eq-9hL" secondAttribute="trailing" constant="28" id="S6c-bZ-AtS"/>
+                            <constraint firstItem="2CP-0I-AAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="T87-D0-Kot"/>
+                            <constraint firstItem="BuJ-rf-P2g" firstAttribute="top" secondItem="B3U-Eq-9hL" secondAttribute="bottom" constant="24" id="TFv-qf-IdL"/>
+                            <constraint firstItem="BuJ-rf-P2g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="e7R-yk-KAM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zjs-1P-Stx" secondAttribute="trailing" constant="28" id="eus-a8-ErX"/>
+                            <constraint firstItem="B3U-Eq-9hL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="hrA-VJ-zgz"/>
+                            <constraint firstItem="zjs-1P-Stx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="o7u-az-aez"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BuJ-rf-P2g" secondAttribute="trailing" constant="28" id="qv2-d9-sq3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2CP-0I-AAu" secondAttribute="trailing" constant="28" id="uac-lw-Gwz"/>
+                            <constraint firstItem="zjs-1P-Stx" firstAttribute="top" secondItem="2CP-0I-AAu" secondAttribute="bottom" constant="18" id="xBF-nn-Dib"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAirPressure" destination="BuJ-rf-P2g" id="Fjn-f7-PzT"/>
+                        <outlet property="btnAltimeter" destination="B3U-Eq-9hL" id="kwI-Hz-aph"/>
+                        <outlet property="textViewActivity" destination="zjs-1P-Stx" id="mFu-HU-f82"/>
+                        <outlet property="textViewPedometer" destination="2CP-0I-AAu" id="yCl-Lj-OWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+</document>
